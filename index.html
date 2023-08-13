@@ -11,10 +11,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="picobricks-lp/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
 
     <title>PicoBricks Proje Geliştirme Kiti</title>
 
     <style>
+         *{
+            font-family: 'Montserrat', sans-serif;
+        }
         @media screen and (max-width: 992px) {
             .mobile-award {
                 display: none;
@@ -69,7 +76,7 @@
             height: 635px;
         }
 
-        /* Dikeyde ortalama */
+        /* Dikeyde ortalama  */
         .full-image {
             display: flex;
             align-items: center;
@@ -81,14 +88,117 @@
             align-items: center;
         }
 
-        .buy-btn{
+        .buy-btn {
             border-radius: 50px;
-            border: 2px solid  #ee7131;
-           background-color: white;
+            border: 2px solid #ee7131;
+            background-color: white;
             padding: 10px 20px;
         }
 
-        /* Dikeyde ortalama */
+        .full-image-3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .col-md-4.d-flex>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Dikeyde ortalama bitiş */
+
+        /* Second block */
+        .full-image-2 {
+            background: url(' https://picobricks.com/wp-content/uploads/2023/08/play-background_Calisma-Yuzeyi-1.svg') no-repeat center center;
+            background-size: cover;
+            height: 635px;
+        }
+
+        .second-block-h1 {
+            color: white;
+        }
+
+        .video-container {
+            position: relative;
+            width: 1000px;
+            height: 450px;
+        }
+
+        .video-iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .video-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px rgb(253, 217, 156) solid;
+
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+        }
+
+        .video-container {
+            position: relative;
+            width: 900px;
+            height: 450px;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .play-button {
+            background-color: transparent;
+            border: none;
+        }
+
+        .play-icon {
+            height: 100px;
+            width: 100px;
+            fill: #fff;
+            filter: drop-shadow(1px 0 6px rgba(0, 0, 0, .3));
+        }
+
+        .play-button:focus {
+            outline: none;
+        }
+       /* third block */
+
+         .full-image-3 {
+            background: url(images/bacground-arrow_Calisma-Yuzeyi-1.svg) no-repeat center center;
+            background-size: cover;
+            height: 635px;
+        }
+        .full-image-3,h1,p{
+            color: white;
+        }
     </style>
 </head>
 
@@ -105,7 +215,6 @@
             <div class="col-md- mr-5">
                 <img class="mobile-award" style="width: 110px; margin-top: 10px;" src="images/if-desing.png">
             </div>
-
 
             <div class="col-md-8">
                 <nav class="navbar navbar-expand-lg navbar-light" id="navbarNav">
@@ -163,8 +272,10 @@
             <div class="col-md-1"></div>
             <div class="col-md-5 d-flex">
                 <div>
-                    <h2 style="color: #ee7131; font-weight: 700;">Robotik kodlama öğrenmenin en hızlı ve en kolay yolu</h2>
-                    <h5  style="color: #ee7131;">PicoBricks, STEM eğitimcileri ve her seviyeden yapımcı için harika bir proje geliştirme kitidir.
+                    <h2 style="color: #ee7131; font-weight: 700;">Robotik kodlama öğrenmenin en hızlı ve en kolay yolu
+                    </h2>
+                    <h5 style="color: #ee7131;">PicoBricks, STEM eğitimcileri ve her seviyeden yapımcı için harika bir
+                        proje geliştirme kitidir.
                         Lehimleme ve kablolama yok. <br> Sınırsız yaratıcılık var!</h5>
                     <button type="button" class="btn buy-btn" style="color: #ee7131;">Hemen Satın Al</button>
                 </div>
@@ -172,9 +283,59 @@
             <div class="col-md-7"></div>
         </div>
     </div>
+    <!-- Second Block -->
     <div class="full-image-2">
-
+        <div>
+            <h1 class="text-center p-5 second-block-h1">PicoBricks Hakkında Daha Fazlasını Öğrenin</h1>
+        </div>
+        <div class="video-container mx-auto">
+            <img class="video-cover"
+                src="https://picobricks.com/wp-content/uploads/2023/08/Sequence-01.00_00_13_09.Still001.jpg"
+                alt="Video Kapak Fotoğrafı">
+            <div class="video-overlay">
+                <button class="play-button" onclick="playVideo()">
+                    <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <iframe class="video-iframe" width="1000" height="450" src="https://www.youtube.com/embed/PDo5nYv2Ci0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
     </div>
+      <!-- Third Block -->
+    <div style="background-color: #d75635;" >
+        <div class="full-image-3">
+         
+           <div class="row">
+               <div class="col-md-2"></div>
+               <div class="col-md-4  d-flex ">
+                   <div>
+                   <h1 class="text-left">PicoBricks Nedir?</h1>
+                   <p>PicoBricks, robotik programlama öğrenme sürecini hızlandırmak ve maker projelerini kolaylaştırmak için tasarlanmış, Raspberry Pi Pico W tabanlı bir elektronik geliştirme kartı ve yazılımıdır. PicoBricks üzerinde 12 ayrılabilir modül bulunmaktadır. Bu, onu projeleriniz için sınırsız olanaklara sahip bir araç haline getirir.</p>
+              </div>
+               </div>
+               <div class="col-md-6">
+     
+               </div>
+               </div>
+         
+        </div>
+       </div>
+        <!-- Fourth Block -->
+    <script>
+        function playVideo() {
+            var iframe = document.querySelector('.video-iframe');
+            iframe.src += "?autoplay=1";
+            document.querySelector('.video-overlay').style.display = 'none';
+            document.querySelector('.video-cover').style.display = 'none';
+        }
+    </script>
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
