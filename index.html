@@ -14,14 +14,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
 
     <title>PicoBricks Proje Geliştirme Kiti</title>
 
     <style>
-         *{
+        * {
             font-family: 'Montserrat', sans-serif;
         }
+
         @media screen and (max-width: 992px) {
             .mobile-award {
                 display: none;
@@ -189,26 +191,66 @@
         .play-button:focus {
             outline: none;
         }
-       /* third block */
 
-         .full-image-3 {
+        /* third block */
+
+        .full-image-3 {
             background: url(images/bacground-arrow_Calisma-Yuzeyi-1.svg) no-repeat center center;
             background-size: cover;
             height: 635px;
         }
-        .full-image-3,h1,p{
+
+        .full-image-3,
+        h1,
+        p {
             color: white;
         }
 
         /* Tenth Block's SVG Icons */
-        .tenth-icon{
+        .tenth-icon {
             width: 2em;
-             height: 2em;
-             mix-blend-mode: multiply;
-             /*Align center SVG */
-             display: block;
-             margin: auto;
+            height: 2em;
+            mix-blend-mode: multiply;
+            /*Align center SVG */
+            display: block;
+            margin: auto;
 
+        }
+
+        .full-image-4 {
+            background: url('images/pico-board-bg_Calisma-Yuzeyi-1.svg') no-repeat center center;
+            background-size: cover;
+
+        }
+
+        .btn-triple-product {
+            background-color: #ee7131;
+            color: white;
+            border-radius: 10px;
+
+        }
+
+        .btn-triple-product:hover {
+            background-color: green;
+            color: white;
+
+        }
+
+
+        .custom-card {
+         
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 10px 10px 0px 0px #C5C5C5;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            margin: 15px;
+        }
+        .triple-img:hover{
+            transform: scale(1.2);
+            transition-timing-function: cubic-bezier(0.47,2.02,.31,-.36)
+            
         }
     </style>
 </head>
@@ -278,6 +320,8 @@
             </div>
         </div>
     </div>
+
+    <!-- First Block -->
     <div class="full-image">
         <div class="row">
             <div class="col-md-1"></div>
@@ -318,136 +362,148 @@
                 allowfullscreen></iframe>
         </div>
     </div>
-      <!-- Third Block -->
-    <div style="background-color: #d75635;" >
+    <!-- Third Block -->
+    <div style="background-color: #d75635;">
         <div class="full-image-3">
-         
-           <div class="row">
-               <div class="col-md-2"></div>
-               <div class="col-md-4  d-flex ">
-                   <div>
-                   <h1 class="text-left">PicoBricks Nedir?</h1>
-                   <p>PicoBricks, robotik programlama öğrenme sürecini hızlandırmak ve maker projelerini kolaylaştırmak için tasarlanmış, Raspberry Pi Pico W tabanlı bir elektronik geliştirme kartı ve yazılımıdır. PicoBricks üzerinde 12 ayrılabilir modül bulunmaktadır. Bu, onu projeleriniz için sınırsız olanaklara sahip bir araç haline getirir.</p>
-              </div>
-               </div>
-               <div class="col-md-2">
-                
-               </div>
-               <!-- <div class="col-md-4"><img src="images/hello-gif.gif" style="width:77%;"></div> -->
-               </div>
-         
-        </div>
-       </div>
 
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 d-flex ">
+                    <div>
+                        <h1 class="text-left">PicoBricks Nedir?</h1>
+                        <p>PicoBricks, robotik programlama öğrenme sürecini hızlandırmak ve maker projelerini
+                            kolaylaştırmak için tasarlanmış, Raspberry Pi Pico W tabanlı bir elektronik geliştirme kartı
+                            ve yazılımıdır. PicoBricks üzerinde 12 ayrılabilir modül bulunmaktadır. Bu, onu projeleriniz
+                            için sınırsız olanaklara sahip bir araç haline getirir.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
 
-      <!-- Fourth Block -->
-
-     <div class="container mb-3 mt-3" style="padding-left: 0 !important; padding-right:0 !important;">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/game.png">
+                </div>
+                <!-- <div class="col-md-4"><img src="images/hello-gif.gif" style="width:77%;"></div> -->
             </div>
-          <div class="col-md-1"></div>
-            <div class="col-md-5 mt-5 pt-5">
-             <img src="images/robotic.svg" style="width: 118px; height: 118px;">
-               <!-- text in the middle on the y axis. -->
-                <h2>STEM ve Robotik Kodlama Eğitimini Basitleştirin</h2>
-                <p style="color: black;">PicoBricks, kolay kullanımı ve basit yapısı ile STEM eğitimini ve robotik kodlama öğrenimini çok kolaylaştırıyor.</p>
-            </div>
-             
+
         </div>
     </div>
 
 
-      <!-- Fifth Block -->
+    <!-- Fourth Block -->
 
-      <div class="container mb-3 mt-3" style="padding-left: 0 !important; padding-right:0 !important;">
+    <div class="container mb-3 mt-3" style="padding-left: 0 !important; padding-right:0 !important;">
         <div class="row">
-     
+            <div class="col-md-6">
+                <img src="images/game.png">
+            </div>
+            <div class="col-md-1"></div>
             <div class="col-md-5 mt-5 pt-5">
-             <img src="images/noun-discovery-385662.svg" style="width: 118px; height: 118px;">
+                <img src="images/robotic.svg" style="width: 118px; height: 118px;">
+                <!-- text in the middle on the y axis. -->
+                <h2>STEM ve Robotik Kodlama Eğitimini Basitleştirin</h2>
+                <p style="color: black;">PicoBricks, kolay kullanımı ve basit yapısı ile STEM eğitimini ve robotik
+                    kodlama öğrenimini çok kolaylaştırıyor.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Fifth Block -->
+
+    <div class="container mb-3 mt-3" style="padding-left: 0 !important; padding-right:0 !important;">
+        <div class="row">
+
+            <div class="col-md-5 mt-5 pt-5">
+                <img src="images/noun-discovery-385662.svg" style="width: 118px; height: 118px;">
                 <h2>Yeni Keşifler Yap</h2>
-                <p style="color: black;">Elektrik ve robotiğin büyülü dünyasına girin. PicoBricks ile kodlama ve genel elektronik ilkelerini öğrenin.</p>
+                <p style="color: black;">Elektrik ve robotiğin büyülü dünyasına girin. PicoBricks ile kodlama ve genel
+                    elektronik ilkelerini öğrenin.</p>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-6">
                 <img src="images/girl-children-1.png">
             </div>
-         
+
         </div>
     </div>
 
 
 
-  <!-- Sixth Block -->
+    <!-- Sixth Block -->
 
-  <div class="container mt-3 mb-5"  style="padding-left: 0 !important; padding-right:0 !important;">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="images/car.png">
-        </div>
-      <div class="col-md-1"></div>
-        <div class="col-md-5">
-         <img src="images/noun-build-373850.svg" style="width: 118px; height: 118px;">
-            <h2>Hayalinizdeki Projeyi Yapın</h2>
-            <p style="color: black;">Uzaktan kumandalı bir araba veya tekne, cep telefonunuzla kontrol edebileceğiniz bir lamba, akıllı bir sera? Hayalinizdeki proje nedir? Bir PicoBricks alın ve hayalinizdeki projeyi şimdi inşa etmeye başlayın.</p>
-        </div>
-         
-    </div>
-</div>
-<br>
-
-      <!-- Seventh Block -->
-
-      <div class="container mt-3 mb-3"  style="padding-left: 0 !important; padding-right:0 !important;">
+    <div class="container mt-3 mb-5" style="padding-left: 0 !important; padding-right:0 !important;">
         <div class="row">
-       
+            <div class="col-md-6">
+                <img src="images/car.png">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <img src="images/noun-build-373850.svg" style="width: 118px; height: 118px;">
+                <h2>Hayalinizdeki Projeyi Yapın</h2>
+                <p style="color: black;">Uzaktan kumandalı bir araba veya tekne, cep telefonunuzla kontrol
+                    edebileceğiniz bir lamba, akıllı bir sera? Hayalinizdeki proje nedir? Bir PicoBricks alın ve
+                    hayalinizdeki projeyi şimdi inşa etmeye başlayın.</p>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+    <!-- Seventh Block -->
+
+    <div class="container mt-3 mb-3" style="padding-left: 0 !important; padding-right:0 !important;">
+        <div class="row">
+
             <div class="col-md-5 ">
-             <img src="images/rocket.svg" style="width: 118px; height: 118px;">
+                <img src="images/rocket.svg" style="width: 118px; height: 118px;">
                 <h2>Geleceğe Hazırlanın</h2>
-                <p style="color: black;">Büyüyünce ne olmak istiyorsun, astronot mu, mühendis mi yoksa doktor mu? Hangi mesleği seçerseniz seçin, PicoBricks problem çözme ve yaratıcılık gibi becerilerinizi geliştirerek sizi geleceğe hazırlayacaktır.</p>
+                <p style="color: black;">Büyüyünce ne olmak istiyorsun, astronot mu, mühendis mi yoksa doktor mu? Hangi
+                    mesleği seçerseniz seçin, PicoBricks problem çözme ve yaratıcılık gibi becerilerinizi geliştirerek
+                    sizi geleceğe hazırlayacaktır.</p>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-6">
                 <img src="images/matematik-banner.png">
             </div>
-         
+
         </div>
     </div>
 
 
- <!-- Eighth Block -->
+    <!-- Eighth Block -->
 
- <div class="container mt-3 mb-3"  style="padding-left: 0 !important; padding-right:0 !important;">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="images/tablet.png">
+    <div class="container mt-3 mb-3" style="padding-left: 0 !important; padding-right:0 !important;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/tablet.png">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <img src="images/wifi.gif" style="width: 118px; height: 118px;">
+                <h2>Hayalinizdeki Projeyi Yapın</h2>
+                <p style="color: black;">Uzaktan kumandalı bir araba veya tekne, cep telefonunuzla kontrol
+                    edebileceğiniz bir lamba, akıllı bir sera? Hayalinizdeki proje nedir? Bir PicoBricks alın ve
+                    hayalinizdeki projeyi şimdi inşa etmeye başlayın.</p>
+            </div>
+
         </div>
-      <div class="col-md-1"></div>
-        <div class="col-md-5">
-         <img src="images/wifi.gif" style="width: 118px; height: 118px;">
-            <h2>Hayalinizdeki Projeyi Yapın</h2>
-            <p style="color: black;">Uzaktan kumandalı bir araba veya tekne, cep telefonunuzla kontrol edebileceğiniz bir lamba, akıllı bir sera? Hayalinizdeki proje nedir? Bir PicoBricks alın ve hayalinizdeki projeyi şimdi inşa etmeye başlayın.</p>
-        </div>
-         
     </div>
-</div>
-   <!-- Nineth Block -->
+    <!-- Nineth Block -->
 
-   <div class="container mt-3 mb-3"  style="padding-left: 0 !important; padding-right:0 !important;">
-    <div class="row">
-   
-        <div class="col-md-5 ">
-         <img src="images/box.svg" style="width: 118px; height: 118px;">
-            <h2>Geleceğe Hazırlanın</h2>
-            <p style="color: black;">Büyüyünce ne olmak istiyorsun, astronot mu, mühendis mi yoksa doktor mu? Hangi mesleği seçerseniz seçin, PicoBricks problem çözme ve yaratıcılık gibi becerilerinizi geliştirerek sizi geleceğe hazırlayacaktır.</p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
-         
-                <img class="video-cover"
-                    src="images/maxresdefault.jpg"
-                    alt="Video Kapak Fotoğrafı" style="max-height: 343px;">
+    <div class="container mt-3 mb-3" style="padding-left: 0 !important; padding-right:0 !important;">
+        <div class="row">
+
+            <div class="col-md-5 ">
+                <img src="images/box.svg" style="width: 118px; height: 118px;">
+                <h2>Geleceğe Hazırlanın</h2>
+                <p style="color: black;">Büyüyünce ne olmak istiyorsun, astronot mu, mühendis mi yoksa doktor mu? Hangi
+                    mesleği seçerseniz seçin, PicoBricks problem çözme ve yaratıcılık gibi becerilerinizi geliştirerek
+                    sizi geleceğe hazırlayacaktır.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+
+                <img class="video-cover" src="images/maxresdefault.jpg" alt="Video Kapak Fotoğrafı"
+                    style="max-height: 343px;">
                 <div class="video-overlay">
                     <button class="play-button" onclick="playVideoFuture()">
                         <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -457,88 +513,192 @@
                         </svg>
                     </button>
                 </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oICcxk4rrDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oICcxk4rrDQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
         </div>
-     
+    </div>
+
+    <!-- Tenth Block -->
+    <div class="container mb-3 mt-5">
+        <div class="row mb-3">
+            <div class="col-md-4 ">
+
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #3d4ca1;" viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z">
+                    </path>
+                </svg>
+
+                <h3 class="text-center">Kolay Taşınabilir</h3>
+                <p class="text-center" style="color: #666666;">Küçük boyutu ve kumaş taşıma çantası sayesinde
+                    PicoBricks'i kolayca yanınızda taşıyabilirsiniz. Karışık kabloların olmaması, her yerde kullanımı
+                    kolaylaştırır.</p>
+            </div>
+
+            <div class="col-md-4">
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #3d4ca1;" viewBox="0 0 496 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200zm-80-216c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm4 72.6c-20.8 25-51.5 39.4-84 39.4s-63.2-14.3-84-39.4c-8.5-10.2-23.7-11.5-33.8-3.1-10.2 8.5-11.5 23.6-3.1 33.8 30 36 74.1 56.6 120.9 56.6s90.9-20.6 120.9-56.6c8.5-10.2 7.1-25.3-3.1-33.8-10.1-8.4-25.3-7.1-33.8 3.1z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color: #3d4ca1;">Çocuklar için Güvenli</h3>
+                <p class="text-center" style="color:#666666;">PicoBricks, RoHS uyumludur ve imalatlarında kurşun
+                    kullanılmaz. Bu iyi sebeplerden dolayı, PicoBricks çocuklar için tamamen güvenlidir. </p>
+            </div>
+            <div class="col-md-4">
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #3d4ca1;" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color: #3d4ca1;">Ayrılabilir</h3>
+                <p class="text-center" style="color:#666666;">PicoBricks, daha gelişmiş projeleriniz için modüllere
+                    ayrılabilir. Ancak endişelenmeyin, modülleri ayırdıktan sonra tekrar taban plakasında
+                    birleştirebilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+
+                <svg aria-hidden="true" class="tenth-icon" viewBox="0 0 512 512" style="fill: #13ad60;"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color: #13ad60;">Artık Hata Yok</h3>
+
+                <p class="text-center" style="color:#666666;">PicoBricks, basit projeler için karmaşık kablolama veya
+                    lehimleme gerektirmez. Bu, hataları en aza indirir. Kodlamaya ve tasarlamaya daha fazla zaman
+                    ayırabilirsiniz.</p>
+            </div>
+
+            <div class="col-md-4">
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #13ad60;" viewBox="0 0 576 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M550.5 241l-50.089-86.786c1.071-2.142 1.875-4.553 1.875-7.232 0-8.036-6.696-14.733-14.732-15.001l-55.447-95.893c.536-1.607 1.071-3.214 1.071-4.821 0-8.571-6.964-15.268-15.268-15.268-4.821 0-8.839 2.143-11.786 5.625H299.518C296.839 18.143 292.821 16 288 16s-8.839 2.143-11.518 5.625H170.411C167.464 18.143 163.447 16 158.625 16c-8.303 0-15.268 6.696-15.268 15.268 0 1.607.536 3.482 1.072 4.821l-55.983 97.233c-5.356 2.41-9.107 7.5-9.107 13.661 0 .535.268 1.071.268 1.607l-53.304 92.143c-7.232 1.339-12.59 7.5-12.59 15 0 7.232 5.089 13.393 12.054 15l55.179 95.358c-.536 1.607-.804 2.946-.804 4.821 0 7.232 5.089 13.393 12.054 14.732l51.697 89.732c-.536 1.607-1.071 3.482-1.071 5.357 0 8.571 6.964 15.268 15.268 15.268 4.821 0 8.839-2.143 11.518-5.357h106.875C279.161 493.857 283.447 496 288 496s8.839-2.143 11.518-5.357h107.143c2.678 2.946 6.696 4.821 10.982 4.821 8.571 0 15.268-6.964 15.268-15.268 0-1.607-.267-2.946-.803-4.285l51.697-90.268c6.964-1.339 12.054-7.5 12.054-14.732 0-1.607-.268-3.214-.804-4.821l54.911-95.358c6.964-1.339 12.322-7.5 12.322-15-.002-7.232-5.092-13.393-11.788-14.732zM153.535 450.732l-43.66-75.803h43.66v75.803zm0-83.839h-43.66c-.268-1.071-.804-2.142-1.339-3.214l44.999-47.41v50.624zm0-62.411l-50.357 53.304c-1.339-.536-2.679-1.34-4.018-1.607L43.447 259.75c.535-1.339.535-2.679.535-4.018s0-2.41-.268-3.482l51.965-90c2.679-.268 5.357-1.072 7.768-2.679l50.089 51.965v92.946zm0-102.322l-45.803-47.41c1.339-2.143 2.143-4.821 2.143-7.767 0-.268-.268-.804-.268-1.072l43.928-15.804v72.053zm0-80.625l-43.66 15.804 43.66-75.536v59.732zm326.519 39.108l.804 1.339L445.5 329.125l-63.75-67.232 98.036-101.518.268.268zM291.75 355.107l11.518 11.786H280.5l11.25-11.786zm-.268-11.25l-83.303-85.446 79.553-84.375 83.036 87.589-79.286 82.232zm5.357 5.893l79.286-82.232 67.5 71.25-5.892 28.125H313.714l-16.875-17.143zM410.411 44.393c1.071.536 2.142 1.072 3.482 1.34l57.857 100.714v.536c0 2.946.803 5.624 2.143 7.767L376.393 256l-83.035-87.589L410.411 44.393zm-9.107-2.143L287.732 162.518l-57.054-60.268 166.339-60h4.287zm-123.483 0c2.678 2.678 6.16 4.285 10.179 4.285s7.5-1.607 10.179-4.285h75L224.786 95.821 173.893 42.25h103.928zm-116.249 5.625l1.071-2.142a33.834 33.834 0 0 0 2.679-.804l51.161 53.84-54.911 19.821V47.875zm0 79.286l60.803-21.964 59.732 63.214-79.553 84.107-40.982-42.053v-83.304zm0 92.678L198 257.607l-36.428 38.304v-76.072zm0 87.858l42.053-44.464 82.768 85.982-17.143 17.678H161.572v-59.196zm6.964 162.053c-1.607-1.607-3.482-2.678-5.893-3.482l-1.071-1.607v-89.732h99.91l-91.607 94.821h-1.339zm129.911 0c-2.679-2.41-6.428-4.285-10.447-4.285s-7.767 1.875-10.447 4.285h-96.429l91.607-94.821h38.304l91.607 94.821H298.447zm120-11.786l-4.286 7.5c-1.339.268-2.41.803-3.482 1.339l-89.196-91.875h114.376l-17.412 83.036zm12.856-22.232l12.858-60.803h21.964l-34.822 60.803zm34.822-68.839h-20.357l4.553-21.16 17.143 18.214c-.535.803-1.071 1.874-1.339 2.946zm66.161-107.411l-55.447 96.697c-1.339.535-2.679 1.071-4.018 1.874l-20.625-21.964 34.554-163.928 45.803 79.286c-.267 1.339-.803 2.678-.803 4.285 0 1.339.268 2.411.536 3.75z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color: #13ad60;">Kolay Bağlanma</h3>
+                <p class="text-center" style="color: #666666;">Mikro USB, Batarya Girişi, Ekstra sensör, motor vb.
+                    bağlantı başlıkları, RGB LED Bağlantısı, Protoboard, DC motor ve röle bağlantı klemensleri, Servo
+                    motor bağlantıları, Kolay Konnektör, Bluetooth bağlantı konnektörü.</p>
+
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center" style="color: #13ad60;">Tam Destek</h3>
+                <i aria-hidden="true" class="smartic-icon- smartic-icon-support"></i>
+                <p class="text-center" style="color:#666666;">Ayrıntılı kullanım, modüller ve geliştirme için kapsamlı
+                    belgeler ürettik. PicoBricks ayrıca yeni başlayanlar için pek çok harika öğretici içeren bir Proje
+                    Kitabı ile birlikte gelir.</p>
+            </div>
+
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #a13d3d;" viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color:  #a13d3d;">Kablosuz Kontrol</h3>
+                <p class="text-center" style="color:#666666;">PicoBricks yerleşik bir WiFi ve kızılötesi alıcıya
+                    sahiptir. Bu, uzaktan kontrol edebileceğiniz projeler geliştirmenizi sağlar. Bluetooth bağlantı
+                    noktasını kullanarak bir Bluetooth bağlantısı da ekleyebilirsiniz.</p>
+            </div>
+            <div class="col-md-4">
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #a13d3d;" viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color:  #a13d3d;">Eğitime Uygun</h3>
+                <p class="text-center" style="color: #666666;">PicoBricks taşınabilirdir, kullanımı kolaydır, kablo veya
+                    lehim gerektirmez ve kapsamlı bir öğretmen kılavuzuyla birlikte gelir, bu da onları eğitim kurumları
+                    için ideal kılar.</p>
+
+            </div>
+
+            <div class="col-md-4">
+                <svg aria-hidden="true" class="tenth-icon" style="fill: #a13d3d;" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M509.5 184.6L458.9 32.8C452.4 13.2 434.1 0 413.4 0H272v192h238.7c-.4-2.5-.4-5-1.2-7.4zM240 0H98.6c-20.7 0-39 13.2-45.5 32.8L2.5 184.6c-.8 2.4-.8 4.9-1.2 7.4H240V0zM0 224v240c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V224H0z">
+                    </path>
+                </svg>
+                <h3 class="text-center" style="color:  #a13d3d;">Kapsamlı Kitler</h3>
+                <p class="text-center" class="text-center" style="color:#666666;">PicoBricks'in her ihtiyaca yönelik
+                    kapsamlı kitleri vardır. Yeni başlayanlardan ileri düzey projelere kadar her ihtiyacınızı düşündük.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Eleventh Block -->
+
+    <div class="full-image-4">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 d-flex justify-content-center">
+                <div>
+                    <img src="images/PicoBricks-Moduls3.png">
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!-- Triple Product Area Block -->
+    <div class="container-fluid mb-5 mt-5">
+
+        <h2 class="text-center">PicoBricks Kitlerini Keşfedin</h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-3 text-center custom-card" style="background-color: #78c1f3;">
+               <a href="https://shop.robotistan.com/products/pico-bricks?variant=42190788001943" target="_blank"><img class="triple-img" src="images/base-kit.png" style="max-width: 350px;"></a>
+                <h4>Temel Kit</h4>
+                <a href="#" class="btn btn-triple-product" role="button" aria-pressed="true">Hemen Satın Al</a>
+            </div>
+            <div class="col-md-3 text-center custom-card" style="background-color: #9be8d8;">
+                <a href="https://shop.robotistan.com/products/pico-bricks?variant=42980374511767" target="_blank"><img class="triple-img" src="images/iot-expert-kit.png" style="max-width: 350px;"></a> 
+                <h4>Iot Uzman Kiti</h4>
+                <a href="#" class="btn btn-triple-product" role="button" aria-pressed="true">Hemen Satın Al</a>
+            </div>
+
+            <div class="col-md-3 text-center custom-card" style="background-color: #e2f6ca;">
+                <a href="https://shop.robotistan.com/products/pico-bricks?variant=42980374544535" target="_blank"><img class="triple-img" src="images/zero-to-hero-kit.png" style="max-width: 350px;"></a>
+                <h4>Sıfırdan Kahraman Kitine</h4>
+                <a href="#" class="btn btn-triple-product" role="button" aria-pressed="true">Hemen Satın Al</a>
+            </div>
+        </div>
+    </div>
+<!-- BricksIDE Area -->
+<div class="container">
+<div class="row justify-content-center">
+    <img src="images/bricks-ide2-1-1024x359.png">
+    <div class="row">
+        <h2 class="text-center" style="color: #ee7131;">Öğrenmenin en iyi yolu ve kolayca robotik kodlamayı öğretin: PicoBricks IDE</h2>
+        <div class="col-md-12">
+         
+                <p class="text-center" style="color:#666666;">Basit, hafif ve tam uyumlu. PicoBricks IDE, PicoBricks için tasarlanmış tamamen uyumlu bir kodlama platformudur. Robot bilimine yeni başlayan çocuklar için görsel tabanlı PicoJr, gelişmiş robot öğrenimi için blok tabanlı PicoBlockly ve ileri düzey programlama için metin tabanlı PicoPy içerir. Elinizde PicoBricks olmadan PicoBricks kullanımını deneyimlemek için PicoSimulator'ı da kullanabilirsiniz. PicoBricks IDE ile birlikte PicoBricks, okullarda robotik programlamayı öğretmek için çok güçlü bir sistem haline gelir.</p>
+        </div>
+        </div>
+
     </div>
 </div>
-
-<!-- Tenth Block -->
-<div class="container mb-3 mt-5">
-<div class="row">
-    <div class="col-md-4 ">
-      
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #3d4ca1;" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg>
- 
-<h3 class="text-center">Kolay Taşınabilir</h3>
-<p class="text-center" style="color: black;">Küçük boyutu ve kumaş taşıma çantası sayesinde PicoBricks'i kolayca yanınızda taşıyabilirsiniz. Karışık kabloların olmaması, her yerde kullanımı kolaylaştırır.</p>
-</div>
-
-<div class="col-md-4">
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #3d4ca1;" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-110.3 0-200-89.7-200-200S137.7 56 248 56s200 89.7 200 200-89.7 200-200 200zm-80-216c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32-32 14.3-32 32 14.3 32 32 32zm4 72.6c-20.8 25-51.5 39.4-84 39.4s-63.2-14.3-84-39.4c-8.5-10.2-23.7-11.5-33.8-3.1-10.2 8.5-11.5 23.6-3.1 33.8 30 36 74.1 56.6 120.9 56.6s90.9-20.6 120.9-56.6c8.5-10.2 7.1-25.3-3.1-33.8-10.1-8.4-25.3-7.1-33.8 3.1z"></path></svg>
-<h3 class="text-center">Çocuklar için Güvenli</h3>
-<p style="color: black;">PicoBricks, RoHS uyumludur ve imalatlarında kurşun kullanılmaz. Bu iyi sebeplerden dolayı, PicoBricks çocuklar için tamamen güvenlidir. </p>
-</div>
-<div class="col-md-4">
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #3d4ca1;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"></path></svg>
-<h3 class="text-center">Ayrılabilir</h3>
-<p style="color: black;">PicoBricks, daha gelişmiş projeleriniz için modüllere ayrılabilir. Ancak endişelenmeyin, modülleri ayırdıktan sonra tekrar taban plakasında birleştirebilirsiniz.</p>
-</div>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-       
-        <svg aria-hidden="true"  class="tenth-icon" viewBox="0 0 512 512" style="fill: #13ad60;" xmlns="http://www.w3.org/2000/svg"><path d="M466.27 286.69C475.04 271.84 480 256 480 236.85c0-44.015-37.218-85.58-85.82-85.58H357.7c4.92-12.81 8.85-28.13 8.85-46.54C366.55 31.936 328.86 0 271.28 0c-61.607 0-58.093 94.933-71.76 108.6-22.747 22.747-49.615 66.447-68.76 83.4H32c-17.673 0-32 14.327-32 32v240c0 17.673 14.327 32 32 32h64c14.893 0 27.408-10.174 30.978-23.95 44.509 1.001 75.06 39.94 177.802 39.94 7.22 0 15.22.01 22.22.01 77.117 0 111.986-39.423 112.94-95.33 13.319-18.425 20.299-43.122 17.34-66.99 9.854-18.452 13.664-40.343 8.99-62.99zm-61.75 53.83c12.56 21.13 1.26 49.41-13.94 57.57 7.7 48.78-17.608 65.9-53.12 65.9h-37.82c-71.639 0-118.029-37.82-171.64-37.82V240h10.92c28.36 0 67.98-70.89 94.54-97.46 28.36-28.36 18.91-75.63 37.82-94.54 47.27 0 47.27 32.98 47.27 56.73 0 39.17-28.36 56.72-28.36 94.54h103.99c21.11 0 37.73 18.91 37.82 37.82.09 18.9-12.82 37.81-22.27 37.81 13.489 14.555 16.371 45.236-5.21 65.62zM88 432c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z"></path></svg>
-        <h3 class="text-center">Artık Hata Yok</h3>
-       
-    <p style="color: black;">PicoBricks, basit projeler için karmaşık kablolama veya lehimleme gerektirmez. Bu, hataları en aza indirir. Kodlamaya ve tasarlamaya daha fazla zaman ayırabilirsiniz.</p>
-</div>
-
-    <div class="col-md-4">
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #13ad60;" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M550.5 241l-50.089-86.786c1.071-2.142 1.875-4.553 1.875-7.232 0-8.036-6.696-14.733-14.732-15.001l-55.447-95.893c.536-1.607 1.071-3.214 1.071-4.821 0-8.571-6.964-15.268-15.268-15.268-4.821 0-8.839 2.143-11.786 5.625H299.518C296.839 18.143 292.821 16 288 16s-8.839 2.143-11.518 5.625H170.411C167.464 18.143 163.447 16 158.625 16c-8.303 0-15.268 6.696-15.268 15.268 0 1.607.536 3.482 1.072 4.821l-55.983 97.233c-5.356 2.41-9.107 7.5-9.107 13.661 0 .535.268 1.071.268 1.607l-53.304 92.143c-7.232 1.339-12.59 7.5-12.59 15 0 7.232 5.089 13.393 12.054 15l55.179 95.358c-.536 1.607-.804 2.946-.804 4.821 0 7.232 5.089 13.393 12.054 14.732l51.697 89.732c-.536 1.607-1.071 3.482-1.071 5.357 0 8.571 6.964 15.268 15.268 15.268 4.821 0 8.839-2.143 11.518-5.357h106.875C279.161 493.857 283.447 496 288 496s8.839-2.143 11.518-5.357h107.143c2.678 2.946 6.696 4.821 10.982 4.821 8.571 0 15.268-6.964 15.268-15.268 0-1.607-.267-2.946-.803-4.285l51.697-90.268c6.964-1.339 12.054-7.5 12.054-14.732 0-1.607-.268-3.214-.804-4.821l54.911-95.358c6.964-1.339 12.322-7.5 12.322-15-.002-7.232-5.092-13.393-11.788-14.732zM153.535 450.732l-43.66-75.803h43.66v75.803zm0-83.839h-43.66c-.268-1.071-.804-2.142-1.339-3.214l44.999-47.41v50.624zm0-62.411l-50.357 53.304c-1.339-.536-2.679-1.34-4.018-1.607L43.447 259.75c.535-1.339.535-2.679.535-4.018s0-2.41-.268-3.482l51.965-90c2.679-.268 5.357-1.072 7.768-2.679l50.089 51.965v92.946zm0-102.322l-45.803-47.41c1.339-2.143 2.143-4.821 2.143-7.767 0-.268-.268-.804-.268-1.072l43.928-15.804v72.053zm0-80.625l-43.66 15.804 43.66-75.536v59.732zm326.519 39.108l.804 1.339L445.5 329.125l-63.75-67.232 98.036-101.518.268.268zM291.75 355.107l11.518 11.786H280.5l11.25-11.786zm-.268-11.25l-83.303-85.446 79.553-84.375 83.036 87.589-79.286 82.232zm5.357 5.893l79.286-82.232 67.5 71.25-5.892 28.125H313.714l-16.875-17.143zM410.411 44.393c1.071.536 2.142 1.072 3.482 1.34l57.857 100.714v.536c0 2.946.803 5.624 2.143 7.767L376.393 256l-83.035-87.589L410.411 44.393zm-9.107-2.143L287.732 162.518l-57.054-60.268 166.339-60h4.287zm-123.483 0c2.678 2.678 6.16 4.285 10.179 4.285s7.5-1.607 10.179-4.285h75L224.786 95.821 173.893 42.25h103.928zm-116.249 5.625l1.071-2.142a33.834 33.834 0 0 0 2.679-.804l51.161 53.84-54.911 19.821V47.875zm0 79.286l60.803-21.964 59.732 63.214-79.553 84.107-40.982-42.053v-83.304zm0 92.678L198 257.607l-36.428 38.304v-76.072zm0 87.858l42.053-44.464 82.768 85.982-17.143 17.678H161.572v-59.196zm6.964 162.053c-1.607-1.607-3.482-2.678-5.893-3.482l-1.071-1.607v-89.732h99.91l-91.607 94.821h-1.339zm129.911 0c-2.679-2.41-6.428-4.285-10.447-4.285s-7.767 1.875-10.447 4.285h-96.429l91.607-94.821h38.304l91.607 94.821H298.447zm120-11.786l-4.286 7.5c-1.339.268-2.41.803-3.482 1.339l-89.196-91.875h114.376l-17.412 83.036zm12.856-22.232l12.858-60.803h21.964l-34.822 60.803zm34.822-68.839h-20.357l4.553-21.16 17.143 18.214c-.535.803-1.071 1.874-1.339 2.946zm66.161-107.411l-55.447 96.697c-1.339.535-2.679 1.071-4.018 1.874l-20.625-21.964 34.554-163.928 45.803 79.286c-.267 1.339-.803 2.678-.803 4.285 0 1.339.268 2.411.536 3.75z"></path></svg>
-    <h3 class="text-center">Kolay Bağlanma</h3>
-    <p style="color: black;">Mikro USB, Batarya Girişi, Ekstra sensör, motor vb. bağlantı başlıkları, RGB LED Bağlantısı, Protoboard, DC motor ve röle bağlantı klemensleri, Servo motor bağlantıları, Kolay Konnektör, Bluetooth bağlantı konnektörü.</p>
-       
-  </div>
-  <div class="col-md-4">
-<h3 class="text-center">Tam Destek</h3>
-<p style="color: black;">Ayrıntılı kullanım, modüller ve geliştirme için kapsamlı belgeler ürettik. PicoBricks ayrıca yeni başlayanlar için pek çok harika öğretici içeren bir Proje Kitabı ile birlikte gelir.</p>
-  </div>
-  
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #a13d3d;" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z"></path></svg>
-<h3 class="text-center">Kablosuz Kontrol</h3>
-<p style="color: black;">PicoBricks yerleşik bir WiFi ve kızılötesi alıcıya sahiptir. Bu, uzaktan kontrol edebileceğiniz projeler geliştirmenizi sağlar. Bluetooth bağlantı noktasını kullanarak bir Bluetooth bağlantısı da ekleyebilirsiniz.</p>
-</div>
-<div class="col-md-4">
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #a13d3d;" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path></svg>
-<h3 class="text-center">Eğitime Uygun</h3>
-<p style="color: black;">PicoBricks taşınabilirdir, kullanımı kolaydır, kablo veya lehim gerektirmez ve kapsamlı bir öğretmen kılavuzuyla birlikte gelir, bu da onları eğitim kurumları için ideal kılar.</p>
-
-</div>
-
-<div class="col-md-4">
-    <svg aria-hidden="true" class="tenth-icon" style="fill: #a13d3d;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M509.5 184.6L458.9 32.8C452.4 13.2 434.1 0 413.4 0H272v192h238.7c-.4-2.5-.4-5-1.2-7.4zM240 0H98.6c-20.7 0-39 13.2-45.5 32.8L2.5 184.6c-.8 2.4-.8 4.9-1.2 7.4H240V0zM0 224v240c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V224H0z"></path></svg>
-    <h3 class="text-center">Kapsamlı Kitler</h3>
-    <p class="text-center" style="color: black;">PicoBricks'in her ihtiyaca yönelik kapsamlı kitleri vardır. Yeni başlayanlardan ileri düzey projelere kadar her ihtiyacınızı düşündük.</p>
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-       
     <script>
         function playVideo() {
             var iframe = document.querySelector('.video-iframe');
@@ -546,7 +706,7 @@
             document.querySelector('.video-overlay').style.display = 'none';
             document.querySelector('.video-cover').style.display = 'none';
         }
-        
+
         function playVideoFuture() {
             var iframe = document.querySelector('.video-iframe');
             iframe.src += "?autoplay=1";
