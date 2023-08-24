@@ -22,14 +22,15 @@
     <title>PicoBricks Proje Geliştirme Kiti</title>
 
     <style>
-    html,body
-   {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden; 
-    }
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
         * {
             font-family: 'Montserrat', sans-serif;
         }
@@ -222,10 +223,16 @@
 
         }
 
-        .full-image-4 {
-            background: url('images/pico-board-bg_Calisma-Yuzeyi-1.svg') no-repeat center center;
+        .full-image-5 {
+            background: url('images/review-back.svg') no-repeat center center;
             background-size: cover;
+            height: 50vw;
 
+        }
+
+        .full-image-5 {
+            background: url('images/review-back.svg') no-repeat center center;
+            background-size: cover;
         }
 
         .btn-triple-product {
@@ -340,7 +347,7 @@
 
         /* For mobile */
         @media screen and (max-width: 992px) {
-            
+
             .mobile-award {
                 display: none;
             }
@@ -348,26 +355,59 @@
             .first-block-desktop {
                 display: none;
             }
-            h1{
+
+            h1 {
                 font-size: 1.5rem !important;
+            }
+
+            .video-container {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .play-icon {
+                height: 50px;
+                width: 50px;
+                fill: #fff;
+                filter: drop-shadow(1px 0 6px rgba(0, 0, 0, .3));
+            }
+
+            .full-image-2 {
+
+                height: 300px;
+
+            }
+
+            .mobile-text {
+                text-align: center !important;
+            }
+
+            mobile-btn {
+                margin: 0;
+            }
+
+            .center-image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .mobile-order {
+                order: 2;
+            }
+
+
+
+
+
+
+
         }
-        .video-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-.play-icon {
-    height: 50px;
-    width: 50px;
-    fill: #fff;
-    filter: drop-shadow(1px 0 6px rgba(0, 0, 0, .3));
-}
-.full-image-2 {
-   
-    height: 300px;
-    
-}
-        }
+
+
+
+
 
         /* For mobile ends*/
         @media screen and (min-width: 993px) {
@@ -379,27 +419,81 @@
             .first-block-mobile {
                 display: none;
             }
-         
-            
-    }
+
+
+        }
+
+
+
+        /*oyun */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0 0 0 / 71%);
+            padding: 20px;
+            position: relative;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: rgb(255, 115, 0);
+            cursor: pointer;
+            width: 50px;
+            height: 88px;
+            font-size: 35px;
+            font-weight: 900;
+        }
+
+        .full-image-4 {
+            background: url('images/pico-board-bg_Calisma-Yuzeyi-1.svg') no-repeat center center;
+            background-size: cover;
+
+        }
+
+
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-2">
         <div class="row">
 
 
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <img style="width: 130px;  margin-top: 10px;"
                     src="https://picobricks.com/wp-content/uploads/2022/09/cropped-pico-bricks-logo.png">
             </div>
-            <div class="col-md- mr-5">
+            <div class="col-md d-none d-md-block mr-5">
                 <img class="mobile-award" style="width: 110px; margin-top: 10px;" src="images/if-desing.png">
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-8 col-6">
                 <nav class="navbar navbar-expand-lg navbar-light" id="navbarNav">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -451,7 +545,7 @@
         </div>
     </div>
 
-    <!-- First Block for Desktop -->
+  <!-- First Block for Desktop -->
     <div class="full-image first-block-desktop">
         <div class="row">
             <div class="col-md-1"></div>
@@ -460,35 +554,82 @@
                     <h2 style="color: #ee7131; font-weight: 700;">Robotik kodlama öğrenmenin en hızlı ve en kolay yolu
                     </h2>
                     <p style="color: #ee7131;">PicoBricks, STEM eğitimcileri ve her seviyeden yapımcı için harika bir
-                        proje geliştirme kitidir.
-                        Lehimleme ve kablolama yok. <br> Sınırsız yaratıcılık var!</p>
-                    <button type="button" class="btn buy-btn" style="color: #ee7131;">Hemen Satın Al</button>
+                        proje geliştirme kitidir. Lehimleme ve kablolama yok.<br>Sınırsız yaratıcılık var!</p>
+                    <div style="display: flex; justify-content: left;">
+                        <a href=""><button type="button" class="btn buy-btn"
+                                style="color: #ee7131; margin: 0 10px;">Hemen Satın Al</button></a>
+                        <button type="button" class="btn buy-btn" style="color: #ee7131; margin: 0 10px;"
+                            onclick="openIframe()">Oyna ve Kupon Kazan!</button>
+                    </div>
                 </div>
             </div>
             <div class="col-md-7"></div>
         </div>
     </div>
+
+    <div class="overlay" id="iframeOverlay">
+        <div class="iframe-container">
+            <span class="close-button" onclick="closeIframe()">&#10005;</span>
+            <iframe src="https://akademi.robotistan.com/wp-content/pico-16/index.html" frameborder="0"
+                style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+
+ 
+
+
+
+    <script>
+        function openIframe() {
+            document.getElementById("iframeOverlay").style.display = "flex";
+        }
+
+        function closeIframe() {
+            document.getElementById("iframeOverlay").style.display = "none";
+        }
+    </script>
+
     <!-- First Block for Mobile -->
     <div class="row first-block-mobile">
-        <div class="col-12 ">
+        <div class="col-12">
             <img class="img-fluid" src="images/banner-new5-mobile-768x590.jpg">
         </div>
-        <div class=" col-12 px-5 pb-5 pt-5" style="background-color: #050F83;">
-            <h2 style="color: #ee7131; font-weight: 700;">Robotik kodlama öğrenmenin en hızlı ve en kolay yolu
+        <div class="col-12 px-5 pb-5 pt-5" style="background-color: #050F83; text-align: center;">
+            <h2 class="mobile-text" style="color: #ee7131; font-weight: 700;">Robotik kodlama öğrenmenin en hızlı ve en
+                kolay yolu
             </h2>
-            <p style="color: #ee7131;">PicoBricks, STEM eğitimcileri ve her seviyeden yapımcı için harika bir
+            <p class="mobile-text" style="color: #ee7131;">PicoBricks, STEM eğitimcileri ve her seviyeden yapımcı için
+                harika bir
                 proje geliştirme kitidir.
                 Lehimleme ve kablolama yok. <br> Sınırsız yaratıcılık var!</p>
-            <button type="button" class="btn buy-btn" style="color: #ee7131;">Hemen Satın Al</button>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn buy-btn" style="color: #ee7131; margin: 0 auto;">Hemen Satın
+                        Al</button>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn buy-btn" style="color: #ee7131; margin: 0 auto;"
+                        onclick="showPopup()">Oyna ve Kupon Kazan!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+    <!-- Popup Container -->
+    <div id="popup-container" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">Kapat</span>
+            <p>Bu bir pop-up penceresidir. İstediğiniz metni buraya ekleyebilirsiniz.</p>
         </div>
     </div>
     <!-- Second Block -->
-    <div class="full-image-2">
+    <div class="full-image-2 ">
         <div>
             <h1 class="text-center p-3 second-block-h1">PicoBricks Hakkında Daha Fazlasını Öğrenin</h1>
         </div>
         <div class="video-container mx-auto">
-            <img class="video-cover"
+            <img class="video-cover img-fluid"
                 src="https://picobricks.com/wp-content/uploads/2023/08/Sequence-01.00_00_13_09.Still001.jpg"
                 alt="Video Kapak Fotoğrafı">
             <div class="video-overlay">
@@ -510,13 +651,15 @@
     <!-- Third Block -->
     <div style="background-color: #d75635;">
         <div class="full-image-3">
-    
+
             <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-3 d-flex align-items-center col-12">
+                <div class="col-md-3 d-flex align-items-center col-12 pt-5">
                     <div>
-                        <h1 class="text-left mb-3" style="margin: 0; font-size: 50px;">PicoBricks Nedir?</h1>
-                        <p style="margin: 0;">PicoBricks, robotik programlama öğrenme sürecini hızlandırmak ve
+                        <h1 class="text-left mb-3 mobile-text" style="margin: 0; font-size: 50px;">PicoBricks Nedir?
+                        </h1>
+                        <p class="mobile-text" style="margin: 0;">PicoBricks, robotik programlama öğrenme sürecini
+                            hızlandırmak ve
                             maker projelerini
                             kolaylaştırmak için tasarlanmış, Raspberry Pi Pico W tabanlı bir elektronik geliştirme kartı
                             ve yazılımıdır. PicoBricks üzerinde 12 ayrılabilir modül bulunmaktadır. Bu, onu projeleriniz
@@ -527,36 +670,42 @@
                 transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);">
                     <img src="images/hello-gif.gif" style="width: 77%;">
                 </div>
-                  <!-- Mobilde sadece bu kısım görünecek -->
-            <div class="row d-md-none mt-5 mb-5">
-                <div class="col-12" style="    --e-transform-rotateZ: -9deg;
+                <!-- Mobilde sadece bu kısım görünecek -->
+                <div class="row d-md-none mt-5 mb-5">
+                    <div class="col-12" style="    --e-transform-rotateZ: -9deg;
                 transform: perspective(var(--e-transform-perspective,0)) rotate(var(--e-transform-rotateZ,0)) rotateX(var(--e-transform-rotateX,0)) rotateY(var(--e-transform-rotateY,0)) translate(var(--e-transform-translate,0)) translateX(var(--e-transform-translateX,0)) translateY(var(--e-transform-translateY,0)) scaleX(calc(var(--e-transform-flipX, 1) * var(--e-transform-scaleX, var(--e-transform-scale, 1)))) scaleY(calc(var(--e-transform-flipY, 1) * var(--e-transform-scaleY, var(--e-transform-scale, 1)))) skewX(var(--e-transform-skewX,0)) skewY(var(--e-transform-skewY,0));
                 transform-origin: var(--e-transform-origin-y) var(--e-transform-origin-x);">
-                    <img src="images/hello-gif.gif" style="width: 100%;">
+                        <img src="images/hello-gif.gif" style="width: 100%;">
+                    </div>
                 </div>
             </div>
-            </div>
-    
-          
-    
+
+
+
         </div>
     </div>
-    
 
+   <!-- Game Container -->
+   <div class="full-image-5 .d-sm-none .d-md-block" id="#gamecontainer">
+    <div class="iframe-container" style="    background-color: rgb(0 0 0 / 28%) !important;">
+        <iframe src="https://akademi.robotistan.com/wp-content/pico-16/index.html" frameborder="0" ></iframe>
+    </div>
+</div>
 
     <!-- Fourth Block -->
 
     <div class="container mb-3 mt-3" style="padding-left: 0 !important; padding-right:0 !important;">
         <div class="row">
             <div class="col-md-6 col-lg-6">
-                <img src="images/game.png">
+                <img src="images/game.png" class="img-fluid">
             </div>
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-5 mt-5 pt-5 col-lg-4">
-                <img src="images/robotic.svg" style="width: 118px; height: 118px;">
+                <img src="images/robotic.svg" class="img-fluid center-image" style="width: 118px; height: 118px;">
                 <!-- text in the middle on the y axis. -->
-                <h2>STEM ve Robotik Kodlama Eğitimini Basitleştirin</h2>
-                <p style="color: black;">PicoBricks, kolay kullanımı ve basit yapısı ile STEM eğitimini ve robotik
+                <h2 class="mobile-text">STEM ve Robotik Kodlama Eğitimini Basitleştirin</h2>
+                <p class="mobile-text" style="color: black;">PicoBricks, kolay kullanımı ve basit yapısı ile STEM
+                    eğitimini ve robotik
                     kodlama öğrenimini çok kolaylaştırıyor.</p>
             </div>
 
@@ -566,20 +715,19 @@
 
     <!-- Fifth Block -->
 
-    <div class="container mb-3 mt-3" style="padding-left: 0 !important; padding-right:0 !important;">
+    <div class="container mb-3 mt-3">
         <div class="row">
-
-            <div class="col-md-5 mt-5 pt-5 col-lg-4 col-12">
-                <img src="images/noun-discovery-385662.svg" style="width: 118px; height: 118px;">
-                <h2>Yeni Keşifler Yap</h2>
-                <p style="color: black;">Elektrik ve robotiğin büyülü dünyasına girin. PicoBricks ile kodlama ve genel
-                    elektronik ilkelerini öğrenin.</p>
+            <div class="col-md-5 mt-5 pt-5 col-lg-4 col-12 mobile-order">
+                <img src="images/noun-discovery-385662.svg" class="img-fluid center-image"
+                    style="width: 118px; height: 118px;">
+                <h2 class="mobile-text">Yeni Keşifler Yap</h2>
+                <p class="mobile-text" style="color: black;">Elektrik ve robotiğin büyülü dünyasına girin. PicoBricks
+                    ile kodlama ve genel elektronik ilkelerini öğrenin.</p>
             </div>
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-6 col-lg-6 col-12">
-                <img src="images/girl-children-1.png">
+                <img src="images/girl-children-1.png" class="img-fluid">
             </div>
-
         </div>
     </div>
 
@@ -590,13 +738,14 @@
     <div class="container mt-3 mb-5" style="padding-left: 0 !important; padding-right:0 !important;">
         <div class="row">
             <div class="col-md-6 col-lg-6">
-                <img src="images/car.png">
+                <img src="images/car.png" class="img-fluid">
             </div>
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-5 col-lg-4">
-                <img src="images/noun-build-373850.svg" style="width: 118px; height: 118px;">
-                <h2>Hayalinizdeki Projeyi Yapın</h2>
-                <p style="color: black;">Uzaktan kumandalı bir araba veya tekne, cep telefonunuzla kontrol
+                <img src="images/noun-build-373850.svg" class="center-image" style="width: 118px; height: 118px;">
+                <h2 class="mobile-text">Hayalinizdeki Projeyi Yapın</h2>
+                <p class="mobile-text" style="color: black;">Uzaktan kumandalı bir araba veya tekne, cep telefonunuzla
+                    kontrol
                     edebileceğiniz bir lamba, akıllı bir sera? Hayalinizdeki proje nedir? Bir PicoBricks alın ve
                     hayalinizdeki projeyi şimdi inşa etmeye başlayın.</p>
             </div>
@@ -609,17 +758,18 @@
 
     <div class="container mt-3 mb-3" style="padding-left: 0 !important; padding-right:0 !important;">
         <div class="row">
-            <div class="col-md-5 col-lg-4">
-                <img src="images/rocket.svg" style="width: 118px; height: 118px;">
-                <h2>Geleceğe Hazırlanın</h2>
-                <p style="color: black;">Büyüyünce ne olmak istiyorsun, astronot mu, mühendis mi yoksa doktor mu?
+            <div class="col-md-5 col-lg-4 mobile-order">
+                <img class="img-fluid center-image" src="images/rocket.svg" style="width: 118px; height: 118px;">
+                <h2 class="mobile-text">Geleceğe Hazırlanın</h2>
+                <p class="mobile-text" style="color: black;">Büyüyünce ne olmak istiyorsun, astronot mu, mühendis mi
+                    yoksa doktor mu?
                     Hangi mesleği seçerseniz seçin, PicoBricks problem çözme ve yaratıcılık gibi becerilerinizi
                     geliştirerek
                     sizi geleceğe hazırlayacaktır.</p>
             </div>
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-6 col-lg-6">
-                <img src="images/matematik-banner.png">
+                <img src="images/matematik-banner.png" class="img-fluid">
             </div>
         </div>
     </div>
@@ -761,18 +911,19 @@
 
     <div class="container mt-3 mb-3" style="padding-left: 0 !important; padding-right:0 !important;">
         <div class="row">
-            <div class="col-md-5 col-lg-4">
-                <img src="images/project-01.svg" style="width: 118px; height: 118px;">
-                <h2>PicoBricks Projelerini Keşfet</h2>
-                <p style="color: black;">PicoBricks ile yapabileceklerinizin sınırı yok. Başlamak ve biraz ilham almak
+            <div class="col-md-5 col-lg-4 mobile-order mobile-text">
+                <img src="images/project-01.svg" style="width: 118px; height: 118px;" class="center-image">
+                <h2 class="mobile-text">PicoBricks Projelerini Keşfet</h2>
+                <p class="mobile-text" style="color: black;">PicoBricks ile yapabileceklerinizin sınırı yok. Başlamak ve
+                    biraz ilham almak
                     için sizin için hazırladığımız 25 projeye göz atın.</p>
-                <a href="https://maker.robotistan.com/kategori/picobricks/" class="btn btn-triple-product" role="button"
-                    aria-pressed="true">Projeleri Keşfet</a>
+                <a href="https://maker.robotistan.com/kategori/picobricks/" class="btn btn-triple-product mobile-btn"
+                    role="button" aria-pressed="true">Projeleri Keşfet</a>
 
             </div>
             <div class="col-lg-2"></div>
             <div class="col-md-5 col-lg-6">
-                <img src="images/greenhouse-project1.png">
+                <img src="images/greenhouse-project1.png" class="img-fluid">
             </div>
         </div>
     </div>
@@ -784,7 +935,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8 d-flex justify-content-center">
                 <div>
-                    <img src="images/PicoBricks-Moduls3.png">
+                    <img src="images/PicoBricks-Moduls3.png" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-2"></div>
@@ -826,7 +977,7 @@
     <!-- BricksIDE Area -->
     <div class="container">
         <div class="row justify-content-center">
-            <img src="images/bricks-ide2-1-1024x359.png" style="width: 100%;">
+            <img src="images/bricks-ide2-1-1024x359.png" style="width: 100%;" class="img-fluid">
             <div class="row">
                 <h2 class="text-center" style="color: #ee7131;">Öğrenmenin en iyi yolu ve kolayca robotik kodlamayı
                     öğretin: PicoBricks IDE</h2>
@@ -839,7 +990,7 @@
                         deneyimlemek için PicoSimulator'ı da kullanabilirsiniz. PicoBricks IDE ile birlikte PicoBricks,
                         okullarda robotik programlamayı öğretmek için çok güçlü bir sistem haline gelir.</p>
                     <a href="https://ide.picobricks.com/verticalblocks.html?0&_gl=1*u6n0au*_ga*MjA3MDg5NzQzMS4xNjkwMTg0NDYz*_ga_PZJG28MD12*MTY5Mjc3MjYzMS4xMC4xLjE2OTI3NzM0MzcuOS4wLjA.&_ga=2.161732732.119648013.1692770723-2070897431.1690184463"
-                        class="btn buy-btn btn-ide mx-auto" target="_blank" style="color: #ee7131;">BricksIDE'yi
+                        class="btn buy-btn btn-ide mx-auto mb-3" target="_blank" style="color: #ee7131;">BricksIDE'yi
                         Keşfet</a>
                 </div>
             </div>
@@ -848,10 +999,11 @@
     </div>
 
     <!-- Gallery -->
-    <div class="gallery">
-        <div class="gallery-row">
-            <img src="images/FuEVO95aMAA1_Qw.jpg.crdownload" alt="Resim 1" class="gallery-image">
-            <img src="images/FsoyIj7XwAE6VV_.jpg.crdownload" alt="Resim 2" class="gallery-image">
+    <div class="gallery d-none">
+        <div class="gallery-row row">
+
+            <img src="images/FuEVO95aMAA1_Qw.jpg.crdownload" alt="Resim 1" class="gallery-image ">
+            <img src="images/FsoyIj7XwAE6VV_.jpg.crdownload" alt="Resim 2" class="gallery-image ">
             <img src="images/Fx3LxZFXgAEzHwx.jpg.crdownload" alt="Resim 3" class="gallery-image">
             <img src="images/Fv8j4SnXgAA49ps.jpg.crdownload" alt="Resim 4" class="gallery-image">
             <img src="images/FsoxhRIWIAI3hb6-scaled.jpg.crdownload" alt="Resim 5" class="gallery-image">
@@ -868,6 +1020,27 @@
             <img src="images/FwLpJHNXwAA_Qmh.jpg.crdownload" alt="Resim 14" class="gallery-image">
         </div>
     </div>
+
+    <!-- Gallery mobile-->
+    <div class="gallery d-md-none">
+        <div class="gallery-row row">
+            <img src="images/FuEVO95aMAA1_Qw.jpg.crdownload" alt="Resim 1" class="gallery-image">
+            <img src="images/FsoyIj7XwAE6VV_.jpg.crdownload" alt="Resim 2" class="gallery-image">
+            <img src="images/Fx3LxZFXgAEzHwx.jpg.crdownload" alt="Resim 3" class="gallery-image">
+            <img src="images/Fv8j4SnXgAA49ps.jpg.crdownload" alt="Resim 4" class="gallery-image">
+            <img src="images/FsoxhRIWIAI3hb6-scaled.jpg.crdownload" alt="Resim 5" class="gallery-image">
+            <img src="images/F01nBu2WAAcdNgz.jpg.crdownload" alt="Resim 6" class="gallery-image">
+            <img src="images/FsjeMlUXsAA0ENs.jpg.crdownload" alt="Resim 7" class="gallery-image">
+            <img src="images/F01ew3LXgAEQCQW.jpg.crdownload" alt="Resim 8" class="gallery-image">
+            <img src="images/FylXW2BX0AIsxr-.jpg.crdownload" alt="Resim 9" class="gallery-image">
+            <img src="images/F1yDLfZWwAA_O65.jpg.crdownload" alt="Resim 10" class="gallery-image">
+            <img src="images/F0Md9pZWwAE6Xe3.jpg.crdownload" alt="Resim 11" class="gallery-image">
+            <img src="images/FyFfRDUWAAAqkvu-scaled.jpg.crdownload" alt="Resim 12" class="gallery-image">
+            <img src="images/F1aoMRFXoBoQ2Fc.jpg.crdownload" alt="Resim 13" class="gallery-image">
+            <img src="images/FwLpJHNXwAA_Qmh.jpg.crdownload" alt="Resim 14" class="gallery-image">
+        </div>
+    </div>
+
     <div class="popup">
         <span class="close-popup">&times;</span>
         <div class="popup-slider">
@@ -923,9 +1096,9 @@
             </div>
 
             <div class="col-md-4">
-                <img src="images/powered-by-raspberry-pi.png" style="width: 75%; display: block; margin-bottom: 10px;">
-                <img src="images/besa-robotistan.png" style="width: 75%; display: block; margin-bottom: 10px;">
-                <img src="images/powered-by-microblocks.png" style="width: 75%; display: block;">
+                <img class="img-fluid" src="images/powered-by-raspberry-pi.png" style="width: 75%; display: block; margin-bottom: 10px;">
+                <img class="img-fluid" src="images/besa-robotistan.png" style="width: 75%; display: block; margin-bottom: 10px;">
+                <img class="img-fluid" src="images/powered-by-microblocks.png" style="width: 75%; display: block;">
             </div>
 
 
@@ -941,9 +1114,16 @@
             document.querySelector('.video-cover').style.display = 'none';
         }
 
-      
 
+    </script>
+    <script>
+        function showPopup() {
+            document.getElementById("popup-container").style.display = "block";
+        }
 
+        function closePopup() {
+            document.getElementById("popup-container").style.display = "none";
+        }
     </script>
     <script>
         const galleryImages = document.querySelectorAll(".gallery-image");
